@@ -1,0 +1,28 @@
+.banner {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-item {
+  animation: slider;
+  animation-duration: 60s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slider {
+  0%,
+  100% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+}
